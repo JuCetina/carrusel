@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.carrusel{
+    width: 90%;
+}
+
+.carrusel__container{
+    height: 220px;
+    padding-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    transition: transform .3s, height .3s;
+}
+
+.carrusel__container:hover{
+    height: 350px;
+}
+
+.carrusel__slide{
+    position: relative;
+    transition: transform .3s;
+}
+
+.carrusel__slide:hover{
+    transform: scale(1.1);
+}
+
+.carrusel__slide:hover .carrusel__info-container{
+    border: none;
+    background-color: transparent;
+    transform: translateY(60px);
+}
+
+.carrusel__slide:hover .carrusel__doctor-nombre{
+    font-size: 16px;
+}
+
+.carrusel__slide:hover .carrusel__especialidad{
+    font-weight: 700;
+    color: #a9bef0;
+}
+
+.carrusel__slide:hover .carrusel__description{
+    opacity: 1;
+}
+
+.carrusel__slide:hover .carrusel__slider-container{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 2px solid #b2b4ef;
+    overflow: hidden;
+}
+
+.carrusel__slider-container{
+    width: 190px;
+    margin: 0 auto;
+}
+
+.carrusel__info-container{
+    width: 180px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: white;
+    border: 2px solid #a0a0a0;
+    border-radius: 5px;
+    padding: 8px 10px;
+    text-align: center;
+    position: relative;
+    bottom: 58px;
+    transition: border .3s, transform .3s;
+}
+
+.carrusel__doctor-nombre, .carrusel__especialidad{
+    font-family: 'Karla', sans-serif;
+    color: #151515;
+    margin: 0;
+}
+
+.carrusel__doctor-nombre{
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.carrusel__especialidad{
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.carrusel__description{
+    width: 180px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 8px 10px;
+    font-family: 'Karla', sans-serif;
+    font-size: 11px;
+    position: relative;
+    bottom: 7px;
+    opacity: 0;
+    transition: opacity .3s;
+}
