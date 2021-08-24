@@ -2,6 +2,8 @@ window.addEventListener('load', function(){
     new Glider(document.querySelector('.glider'), {
         slidesToShow: 1,
         slidesToScroll: 1,
+        scrollLock: false, //If true, Glider.js will scroll to the nearest slide after any scroll interactions
+        draggable: false, //If true, the list can be scrolled by click and dragging with the mouse
         dots: '.dots',
         arrows: {
           prev: '.glider-prev',
