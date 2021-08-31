@@ -17,7 +17,7 @@ body {
 }
 
 .carrusel__container.hover{
-    height: 350px;
+    height: 358px;
 }
 
 .carrusel__slide {
@@ -94,6 +94,7 @@ body {
 }
 
 .carrusel__description {
+    color: #151515;
     display: -webkit-box;
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
@@ -110,9 +111,48 @@ body {
     transition: opacity 0.3s;
 }
 
+.carrusel__link{
+    text-decoration: none;
+}
+
+.carrusel__link:visited .carrusel__description{
+    color: #151515;
+}
+
+.carrusel__link:active .carrusel__description{
+    color: #151515;
+}
+
+.carrusel__link--two{
+    width: 100%;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Karla", sans-serif;
+    color: #151515;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.carrusel__slide.hover .carrusel__link--two {
+    opacity: 1;
+}
+
+.carrusel__link--two:visited .carrusel__description{
+    color: #151515;
+}
+
+.carrusel__link--two:active .carrusel__description{
+    color: #151515;
+}
+
 @media screen and (min-width: 768px) {
     .carrusel__container:hover {
-        height: 350px;
+        height: 358px;
     }
 
     .carrusel__slide:hover {
@@ -145,5 +185,9 @@ body {
         border-bottom-right-radius: 5px;
         border: 2px solid #b2b4ef;
         overflow: hidden;
+    }
+
+    .carrusel__slide:hover .carrusel__link--two {
+        opacity: 1;
     }
 }
