@@ -16,8 +16,12 @@ body {
     transition: transform 0.3s, height 0.3s;
 }
 
+.carrusel__container::-webkit-scrollbar {
+    display: none;
+}
+
 .carrusel__container.hover{
-    height: 358px;
+    height: 360px;
 }
 
 .carrusel__slide {
@@ -111,18 +115,6 @@ body {
     transition: opacity 0.3s;
 }
 
-.carrusel__link{
-    text-decoration: none;
-}
-
-.carrusel__link:visited .carrusel__description{
-    color: #151515;
-}
-
-.carrusel__link:active .carrusel__description{
-    color: #151515;
-}
-
 .carrusel__link--two{
     width: 100%;
     display: inline-block;
@@ -152,7 +144,7 @@ body {
 
 @media screen and (min-width: 768px) {
     .carrusel__container:hover {
-        height: 358px;
+        height: 360px;
     }
 
     .carrusel__slide:hover {
